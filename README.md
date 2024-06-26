@@ -15,7 +15,8 @@ Samples are provided in the package.
 
 The `CoroutinesService` has two main methods for starting/stopping coroutines:
 ```cs
-CoroutinePlaybackInfo PlayCoroutine(string coroutineDebugName, Func<IEnumerator> coroutineCallback, Func<bool> checkCallback, CoroutinePlaybackData data = default);
+CoroutinePlaybackInfo PlayCoroutine(string coroutineDebugName, Func<IEnumerator> coroutineCallback,
+    Func<bool> checkCallback, CoroutinePlaybackData data = default);
 
 void StopCoroutine(CoroutinePlaybackInfo? coroutinePlaybackInfo);
 ```
