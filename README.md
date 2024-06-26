@@ -23,7 +23,7 @@ void StopCoroutine(CoroutinePlaybackInfo? coroutinePlaybackInfo);
 
 To start a coroutine, you need to specify a label (string), a coroutine method, and a validation method.
 
-** Validation Method **
+### Validation Method
 
 The validation method is designed to stop the coroutine in the player loop cycle if the method returns `false`. For example, check that the game object is still alive or that the `Boolean` variable is still set to `true`. If you want to omit the verification method, you can make an anonymous method that returns `true`.
 
@@ -47,7 +47,7 @@ coroutinesService.StopCoroutine(examplePlaybackInfo);
 
 It is more convenient to mark a variable as *nullable*. The service is responsible for checking that the value is not `null` and that the coroutine can be stopped.
 
-** Stopping Callbacks **
+### Stopping Callbacks
 An optional parameter is the `CoroutinePlaybackData` structure, which provides fields with callbacks for different coroutine stopping contexts:
 * `onBreakCallback` - Is called if a validation method fails (returns `false`).
 * `onFinishedCallback` - Is called only when the coroutine finishes execution without breaking/stopping.
