@@ -11,7 +11,7 @@ You can download a unity package from [the latest release](../../releases).
 ## Usage
 Samples are provided in the package. 
 
-`CoroutinesService` is a simple class without inheritance from MonoBehaviour. The task of introducing this dependency into your project (by using Singleton, DI, etc.) is your concern; the samples provide an example of creating and using a service instance.
+`CoroutinesService` is a simple class without inheritance from `MonoBehaviour`. The task of introducing this dependency into your project (by using *Singleton*, *DI*, etc.) is your concern; the samples provide an example of creating and using a service instance.
 
 The `CoroutinesService` has two main methods for starting/stopping coroutines:
 ```cs
